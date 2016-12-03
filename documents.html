@@ -18,11 +18,20 @@
                 <img src="pictures/logo.png" alt="logo" height="60" width="60">
             </a>
         </li>
-        <li><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+        <li class="w3-hide-small"><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
         <li class="w3-hide-small"><a href="skwadmembers.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">SKWAD</a></li>
         <li class="w3-hide-small"><a href="projectstatus.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">PROJECT STATUS</a></li>
         <li class="w3-hide-small"><a href="documents.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">DOCS</a></li>
-        </li>
+    </ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-container w3-top" style="margin-top:85px">
+    <ul class="w3-navbar w3-left-align w3-black">
+        <li><a href="index.html" class="w3-padding-large">HOME</a></li>
+        <li><a class="w3-padding-large" href="skwadmembers.html">SKWAD</a></li>
+        <li><a href="projectstatus.html" class="w3-padding-large">PROJECT STATUS</a></li>
+        <li><a href="documents.html" class="w3-padding-large">DOCS</a></li>
     </ul>
 </div>
 <!-- this is a table -->
@@ -51,6 +60,33 @@
         </table>
     </div>
 </div>
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 <!-----------------------------------Footer----------------------------------------------->
 <div>
     <hr>
