@@ -44,14 +44,39 @@
 
   <!-- Automatic Slideshow Images -->
   <div class="w3-display-container w3-center">
-    <img src="pictures/skwad.jpg" style="width:60%">
-    <h3 class = w3-text-blue>MEET THE SKWAD</h3>
-    <p class = w3-text-blue><b>Your resident chatbot experts :)
-
-    </b>
-    </p>
+    <img src="pictures/skwad.jpg" id="frame" style="width:60%" usemap="#facemap">
+    <h3 class = "w3-text-blue">MEET THE SKWAD</h3>
+	<p class="hide w3-center" id="team" style="display:block">
+		Your resident chatbot experts :)
+	</p>
+	<p class="hide w3-center" id="mccoyID" style="display:none">
+		<strong class="fontsize20">Chris McCoy</strong>
+	</p>
+	<p class="hide w3-center" id="milanoID" style="display:none">
+		<strong class="fontsize20">Patrick Milano</strong>
+	</p>
+	<p class="hide w3-center" id="calabreseID" style="display:none">
+		<strong class="fontsize20">Anthony Calabrese</strong>
+	</p>
+	<p class="hide w3-center" id="kishID" style="display:none">
+		<strong class="fontsize20">Brendan Kish</strong>
+	</p>
+	<p class="hide w3-center" id="weynaID" style="display:none">
+		<strong class="fontsize20">Ryan Weyna</strong>
+	</p>
   </div>
+  
+  <map name="facemap">
+	<area shape="rect" coords="0,0,0,0" target="_blank" href="docs/resumes/patrickresume.pdf" id="milano" class="percentages">
+	<area shape="rect" coords="0,0,0,0" target="_blank" href="docs/resumes/anthonyresume.pdf" id="calabrese" class="percentages">
+	<area shape="rect" coords="0,0,0,0" target="_blank" href="docs/resumes/ryanresume.pdf" id="weyna" class="percentages">
+	<area shape="rect" coords="0,0,0,0" target="_blank" href="docs/resumes/chrisresume.pdf" id="mccoy" class="percentages">
+    <area shape="rect" coords="0,0,0,0" target="_blank" href="docs/resumes/brendanresume.pdf" id="kish" class="percentages">
+  </map>
 <!-- End Page Content -->
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="script.js"></script>
 
 <script>
 
