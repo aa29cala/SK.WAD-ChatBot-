@@ -1,146 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Team SKWAD - Docs</title>
+    <title>Team SKWAD - Docs</title>
+    <link rel="icon" type='image/png' href="pictures/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="stylesheet.css" rel="stylesheet">
-    <link rel="icon" type='image/png' href="pictures/favicon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/w3.css">
 </head>
+
 <body>
+
 <!-- Navbar -->
-<div class="w3-container">
-    <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-            <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        </li>
-        <li>
-            <a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">
-                <img src="pictures/logo.png" alt="logo" height="60" width="60">
-            </a>
-        </li>
-        <li class="w3-hide-small"><a href="index.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
-        <li class="w3-hide-small"><a href="skwadmembers.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">SKWAD</a></li>
-        <li class="w3-hide-small"><a href="projectstatus.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">PROJECT STATUS</a></li>
-        <li class="w3-hide-small"><a href="documents.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">DOCS</a></li>
-    </ul>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-container w3-top" style="margin-top:76px">
-    <ul class="w3-navbar w3-left-align w3-black">
-        <li><a href="index.html" class="w3-padding-large">HOME</a></li>
-        <li><a class="w3-padding-large" href="skwadmembers.html">SKWAD</a></li>
-        <li><a href="projectstatus.html" class="w3-padding-large">PROJECT STATUS</a></li>
-        <li><a href="documents.html" class="w3-padding-large">DOCS</a></li>
-    </ul>
-</div>
-<!-- this is a table -->
-<div class="w3-container">
-    <div class="w3-container">
-        <h2>Sprint Documents</h2>
-        <table class="w3-table w3-striped">
-            <tr>
-                <th>Sprint Number</th>
-                <th>Test Cases</th>
-                <th>Presentation</th>
-                <th>Meeting Notes</th>
-            </tr>
-			<tr>
-                <td>3</td>
-                <td>
-                    <a href="docs/unittestcases/sprintThreeUnitTestCases.pdf">
-                        <img src="pictures/excelico.jpg">                    
-                    </a>
-                </td>
-                <td>
-                    <a href="docs/presentations/sprint3presentation.pdf">
-                    <img src="pictures/pptico.jpg">
-                    </a>
-                </td>
-                <td>
-                    <img src="pictures/pdfico.jpg">
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>
-                    <a href="docs/unittestcases/sprintTwoUnitTestCases.pdf">
-                        <img src="pictures/excelico.jpg">                    
-                    </a>
-                </td>
-                <td>
-                    <a href="docs/presentations/sprint1-2%20presentation.pdf">
-                    <img src="pictures/pptico.jpg">
-                    </a>
-                </td>
-                <td>
-                    <img src="pictures/pdfico.jpg">
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>
-                    <a href="docs/unittestcases/sprintOneUnitTestCases.pdf">
-                        <img src="pictures/excelico.jpg">
-                    </a>
-                </td>
-                <td>
-                    <a href="docs/presentations/sprint1-2%20presentation.pdf">
-                        <img src="pictures/pptico.jpg">
-                    </a>
-                </td>
-                <td>
-                    <img src="pictures/pdfico.jpg">
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
-    <br>
-<script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 4000);
-    }
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-</script>
-<!-----------------------------------Footer----------------------------------------------->
-<div>
-    <hr>
-    <footer>
-        <div class="w3-center">
-            <p class="w3-medium w3-text-blue">
-                <a href="http://sienacollegesoftwareengineering.github.io/index.html" target="_blank">Siena Software Engineering |</a>
-                <a href="http://www.siena.edu/academics/schools-departments/departments/computer-science" target="_blank">Siena Computer Science |</a>
-                <a href="https://www.siena.edu/academics/schools-departments/school-of-science" target="_blank">Siena School of Science |</a>
-                <a href="https://www.siena.edu/" target="_blank">Siena College</a>
-            </p>
-            <p>Copyright © 2016 Skwad. All rights reserved.</p>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img class="navbar-brand" src="pictures/logo.png" style="width: 60px; height: 60px;"></a>
         </div>
-    </footer>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skwadmembers.html">SKWAD</a>
+                <li><a href="projectstatus.html">PROJECT STATUS</a></li>
+                <li><a href="documents.html">DOCS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header>
+    <h1>Sprint Documents</h1>
+</header>
+<!-- this is a table -->
+
+<div id="table" class="table-responsive ">
+    <table class=" table table-hover">
+        <tr>
+            <th>Sprint Number</th>
+            <th>Test Cases</th>
+            <th>Presentation</th>
+            <th>Meeting Notes</th>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <a href="docs/unittestcases/sprintFiveUnitTestCases.pdf">
+                    <img src="pictures/excelico.jpg">
+                </a>
+            </td>
+            <td>
+                <a href="docs/presentations/sprint5presentation.pdf">
+                    <img src="pictures/pptico.jpg">
+                </a>
+            </td>
+            <td>
+                <img src="pictures/pdfico.jpg">
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>
+                <a href="docs/unittestcases/sprintFourUnitTestCases.pdf">
+                    <img src="pictures/excelico.jpg">
+                </a>
+            </td>
+            <td>
+                <a href="docs/presentations/sprint5presentation.pdf">
+                    <img src="pictures/pptico.jpg">
+                </a>
+            </td>
+            <td>
+                <img src="pictures/pdfico.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <a href="docs/unittestcases/sprintThreeUnitTestCases.pdf">
+                    <img src="pictures/excelico.jpg">
+                </a>
+            </td>
+            <td>
+                <a href="docs/presentations/sprint3presentation.pdf">
+                    <img src="pictures/pptico.jpg">
+                </a>
+            </td>
+            <td>
+                <img src="pictures/pdfico.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <a href="docs/unittestcases/sprintTwoUnitTestCases.pdf">
+                    <img src="pictures/excelico.jpg">
+                </a>
+            </td>
+            <td>
+                <a href="docs/presentations/sprint1-2%20presentation.pdf">
+                    <img src="pictures/pptico.jpg">
+                </a>
+            </td>
+            <td>
+                <img src="pictures/pdfico.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <a href="docs/unittestcases/sprintOneUnitTestCases.pdf">
+                    <img src="pictures/excelico.jpg">
+                </a>
+            </td>
+            <td>
+                <a href="docs/presentations/sprint1-2%20presentation.pdf">
+                    <img src="pictures/pptico.jpg">
+                </a>
+            </td>
+            <td>
+                <img src="pictures/pdfico.jpg">
+            </td>
+        </tr>
+    </table>
 </div>
+<br>
+
+<!-----------------------------------Footer----------------------------------------------->
+<hr>
+<footer>
+    <p>
+        <a href="http://sienacollegesoftwareengineering.github.io/index.html" target="_blank">Siena Software
+            Engineering |</a>
+        <a href="http://www.siena.edu/academics/schools-departments/departments/computer-science"
+           target="_blank">Siena Computer Science |</a>
+        <a href="https://www.siena.edu/academics/schools-departments/school-of-science" target="_blank">Siena
+            School of Science |</a>
+        <a href="https://www.siena.edu/" target="_blank">Siena College</a>
+    </p>
+    <p>Copyright &copy; 2016 SKWAD. All rights reserved.</p>
+</footer>
 </body>
 </html>

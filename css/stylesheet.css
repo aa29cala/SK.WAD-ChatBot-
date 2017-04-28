@@ -1,0 +1,102 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: skyblue;
+}
+
+.mySlides {
+    display: none
+}
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #2d2d30 !important;
+}
+
+.dropdown-menu li a {
+    color: #fff !important;
+    background-color: #2d2d30 !important;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: deepskyblue !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    margin: auto;
+    text-shadow: black;
+}
+
+.container {
+    margin: auto;
+    align-content: center;
+    width: 85%;
+    text-align: center;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+hr {
+    color: blue;
+}
+
+header {
+    padding-top: 100px;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+#table {
+    text-align: center;
+    align-content: center;
+}
+
+th {
+    text-align: center;
+    align-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#skwadMembersLogo {
+    margin: auto;
+    align-content: center;
+    width: 20%;
+    display: block;
+}
