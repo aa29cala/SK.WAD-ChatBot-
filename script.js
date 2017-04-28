@@ -7,33 +7,16 @@ window.onresize = function () {
 }
 
 function hideTeam() {
-    document.querySelector("#team").setAttribute("class", "display:none;");
-    document.querySelector("#" + this.id + "ID").setAttribute("class", "display:block;");
+    document.querySelector("#team").setAttribute("style", "display:none;");
+    document.querySelector("#" + this.id + "ID").setAttribute("style", "display:block;");
 }
 function showTeam() {
     var faceBoxes = document.querySelectorAll(".hideme");
     for (var i = 0; i < faceBoxes.length; i++) {
-        faceBoxes[i].setAttribute("class", "display:none;");
+        faceBoxes[i].setAttribute("style", "display:none;");
     }
-    document.querySelector("#team").setAttribute("class", "display:block;");
+    document.querySelector("#team").setAttribute("style", "display:block;");
 }
-//
-// $(".percentages").mouseover(function () {
-//         document.querySelector("#team").setAttribute("class", "display:none;");
-//         document.querySelector("#" + this.id + "ID").setAttribute("class", "display:block;");
-//         // $(".hideme").attr("style", "display:none");
-//         // $("#" + this.id + "ID").attr("style", "display:block");
-//     },
-//
-//     function () {
-//         var faceBoxes = document.querySelectorAll(".hideme");
-//         for (var i = 0; i < faceBoxes.length; i++) {
-//             faceBoxes[i].setAttribute("class", "display:none;");
-//         }
-//         document.querySelector("#team").setAttribute("class", "display:block;");
-//         // $(".hideme").attr("style", "display:none");
-//         //$("#team").attr("style", "display:block");
-//     });
 
 function recalcMap() {
 
